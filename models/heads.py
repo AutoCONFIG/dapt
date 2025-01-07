@@ -122,8 +122,8 @@ class Coord3dClsHead(nn.Module):
         dxx = 1e-9 + 0.25 * (dx2 - 2 * dx0 + dx_2)
 
         offset = dx / dxx
-        if (offset > 1.0).any():
-            return keypoints.float()
+        mask = (offset > 0.2).any(dim=-1)
+        offset[mask] = 0.0
 
         return keypoints.float() - offset[..., 0]
     

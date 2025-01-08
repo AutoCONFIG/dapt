@@ -122,7 +122,7 @@ class Coord3dClsHead(nn.Module):
         dxx = 1e-9 + 0.25 * (dx2 - 2 * dx0 + dx_2)
 
         offset = dx / dxx
-        mask = (offset > 0.2).any(dim=-1)
+        mask = (offset.abs() > 0.5).any(dim=-1)
         offset[mask] = 0.0
 
         return keypoints.float() - offset[..., 0]

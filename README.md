@@ -80,11 +80,14 @@ We thank the following open source projects for helping us implement our idea.
 ## Citation
 This will be modified after publication.
 ```bibtex
-@inproceedings{an2024dapt,
+@article{an2025dapt,
   title={Pre-training a Density-Aware Pose Transformer for Robust LiDAR-based 3D Human Pose Estimation},
+  volume={39},
+  doi={10.1609/aaai.v39i2.32169},
+  number={2},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
   author={An, Xiaoqi and Zhao, Lin and Gong, Chen and Li, Jun and Yang, Jian},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  pages={xxxxx--xxxxx},
-  year={2025}
+  year={2025},
+  pages={1755-1763}
 }
 ```

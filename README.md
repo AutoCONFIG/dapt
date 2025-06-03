@@ -54,7 +54,7 @@ wandb login
 Please refer to [DATA.md](assets/DATA.md) for data download and preparation.
 
 ## Test
-Pre-trained checkpoints can be downloaded from [**here**](https://1drv.ms/f/s!As3g2ozBLMgFkJFfEzkp5jvmV7Vp3A?e=pRgQFW).
+Pre-trained checkpoints can be downloaded from [[**OneDrive**](https://1drv.ms/f/c/05c82cc18cdae0cd/Qs3g2ozBLMgggAXfCAQAAAAAEzkp5jvmV7Vp3A)/[**GoogleDrive**](https://drive.google.com/drive/folders/1do2mTCL-gmMID9ZTLuvuCEoLSBrqr5Yg?usp=sharing)/[**BaiduNetdisk**](https://pan.baidu.com/s/1cop7nuxpdzk5UgNB9Xwutw?pwd=dnvy)].
 ```bash
 accelerate launch main.py configs/dapt-waymo-50b64-finetune.py --test \
     --ckpt checkpoints/dapt-waymo-50b64-finetune.safetensors
@@ -78,7 +78,6 @@ We thank the following open source projects for helping us implement our idea.
 - [MMPose](https://github.com/open-mmlab/mmpose)
 - [V2VPoseNet](https://github.com/dragonbook/V2V-PoseNet-pytorch)
 ## Citation
-This will be modified after publication.
 ```bibtex
 @article{an2025dapt,
   title={Pre-training a Density-Aware Pose Transformer for Robust LiDAR-based 3D Human Pose Estimation},

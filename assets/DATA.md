@@ -1,3 +1,6 @@
+# Pre-processed data
+If you want to use the pre-processed data, download from [[**OneDrive**](https://1drv.ms/f/c/05c82cc18cdae0cd/Qs3g2ozBLMgggAXfCAQAAAAAEzkp5jvmV7Vp3A)/[**GoogleDrive**](https://drive.google.com/drive/folders/1do2mTCL-gmMID9ZTLuvuCEoLSBrqr5Yg?usp=sharing)/[**BaiduNetdisk**](https://pan.baidu.com/s/1cop7nuxpdzk5UgNB9Xwutw?pwd=dnvy)]. **BUT** LiDARHuman2.6M/SLOPER4D/HumanM3 still require the raw data for training/testing.
+
 ## SMPL Models (for pretraining)
 1. Download SMPL Model (10 shape PCs) from [SMPL official website](https://smpl.is.tue.mpg.de/).
 2. Ensure the `smpl_models` folder has the following structure:
@@ -37,7 +40,7 @@ gcloud storage cp -r \
   "gs://waymo_open_dataset_v_2_0_0/training/vehicle_pose" \
   /path/to/raw/training
 
-gsutil -m cp -r \
+gcloud storage cp -r \
   "gs://waymo_open_dataset_v_2_0_0/validation/lidar" \
   "gs://waymo_open_dataset_v_2_0_0/validation/lidar_box" \
   "gs://waymo_open_dataset_v_2_0_0/validation/lidar_calibration" \
@@ -56,7 +59,6 @@ python -m tools.prepare_waymopose \
   --buffer-path ./data/waymo_v2 \
   --nproc 2
 ```
-If you want to use the processed data, download from [**here**](https://1drv.ms/f/s!As3g2ozBLMgFkJFfEzkp5jvmV7Vp3A?e=pRgQFW).
 ## SLOPER4D
 1. Download from [SLOPER4D official website](http://www.lidarhumanmotion.net/data-sloper4d/).
 2. Note that SLOPER4D has no train-test split, the generation process follows [Neighborhood Enhanced LiDARCap](https://ojs.aaai.org/index.php/AAAI/article/view/28545):

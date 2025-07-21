@@ -23,8 +23,8 @@ from pointcept.datasets.transform import Compose
 class LiDARH26MPoseDataset(Dataset):
     _getitem_call: Callable[['LiDARH26MPoseDataset', int], str] = None
     def __init__(self,
-                 raw_path='/mnt/datasets/lidarhuman26M',
-                 buffer_path='./data/lidarh26m',
+                 raw_path='D:\dataset\lidarhuman26M',
+                 buffer_path='D:\dataset_buffer\lidarh26m',
                  smpl_model_path='./smpl_models',
                  split='train',
                  modality=['lidar'],

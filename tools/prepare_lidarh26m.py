@@ -3,8 +3,8 @@ from argparse import ArgumentParser
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument('--raw-path', type=str, default='/mnt/datasets/lidarhuman26M')
-    parser.add_argument('--buffer-path', type=str, default='./data/lidarh26m')
+    parser.add_argument('--raw-path', type=str, default='D:\dataset\lidarhuman26M')
+    parser.add_argument('--buffer-path', type=str, default='D:\dataset_buffer\lidarh26m')
     args = parser.parse_args()
     print(args)
     for split in ['train', 'test']:

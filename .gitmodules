@@ -1,6 +1,3 @@
 [submodule "pointcept_src"]
 	path = pointcept_src
 	url = https://github.com/Pointcept/Pointcept
-[submodule "pointnet2_src"]
-	path = pointnet2_src
-	url = https://github.com/erikwijmans/Pointnet2_PyTorch

@@ -242,5 +242,4 @@ dependencies:
       - widgetsnbextension==4.0.13
       - yarl==1.18.3
       - pointcept_src/libs/pointops
-      - pointnet2_src/pointnet2_ops_lib
       - git+https://github.com/mattloper/chumpy.git

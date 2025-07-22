@@ -43,7 +43,7 @@ dependencies:
     - scikit-learn
     - smplx
     - spconv-cu126
-    - torch=2.7.1
+    - torch==2.7.1
     - torchaudio
     - torchvision
     - torch-cluster

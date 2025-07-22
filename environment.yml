@@ -10,6 +10,7 @@ dependencies:
   - addict
   - conda-forge::cudnn
   - cuda
+  - cuda-nvcc=12.9
   - einops
   - ffmpeg
   - gcc=13.2

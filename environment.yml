@@ -8,25 +8,22 @@ channels:
   - defaults
 dependencies:
   - addict
+  - black
   - conda-forge::cudnn
-  - cuda=12.4
-  - cuda-nvcc=12.4
-  - cuda-toolkit=12.4
-  - cuda-version=12.4
+  - cuda
   - einops
-  - ffmpeg
+  - ftfy
   - gcc=13.2
   - google-sparsehash
   - gxx=13.2
   - h5py
-  - hdf5
   - ninja
   - numpy
   - open3d
   - pip
   - plyfile
   - python=3.10
-  - pytorch=2.6.0
+  - pytorch
   - pytorch-cuda=12.4
   - pyyaml
   - regex

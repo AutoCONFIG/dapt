@@ -9,9 +9,10 @@ channels:
 dependencies:
   - addict
   - conda-forge::cudnn
-  - cuda
-  - cuda-nvcc
-  - cuda-toolkit
+  - cuda=12.4
+  - cuda-nvcc=12.4
+  - cuda-toolkit=12.4
+  - cuda-version=12.4
   - einops
   - ffmpeg
   - gcc=13.2
@@ -41,7 +42,7 @@ dependencies:
   - yapf
   - pip:
     - --find-links https://data.pyg.org/whl/torch-2.6.0+cu124.html
-    - cumm-cu128
+    - cumm-cu124
     - opencv-python-headless
     - pandas
     - scikit-learn

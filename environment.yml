@@ -24,8 +24,8 @@ dependencies:
   - pip
   - plyfile
   - python=3.12
-  - pytorch=*=*cuda129*
-  - pytorch-cuda
+  - pytorch=2.7.0=*cuda128*
+  - pytorch-cuda=12.8
   - pyyaml
   - regex
   - scipy

@@ -31,12 +31,11 @@ dependencies:
   - tensorboardx
   - termcolor
   - timm
-  - torchaudio
-  - torchvision
   - tqdm
   - wandb
   - yapf
   - pip:
+    - --find-links https://download.pytorch.org/whl/cu128
     - --find-links https://data.pyg.org/whl/torch-2.7.0+cu128.html
     - cumm-cu128
     - opencv-python-headless
@@ -45,6 +44,8 @@ dependencies:
     - smplx
     - spconv-cu126
     - torch
+    - torchaudio
+    - torchvision
     - torch-cluster
     - torch-geometric
     - torch-scatter

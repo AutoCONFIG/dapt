@@ -36,14 +36,14 @@ dependencies:
   - yapf
   - pip:
     - --find-links https://download.pytorch.org/whl/cu128
-    - --find-links https://data.pyg.org/whl/torch-2.7.0+cu128.html
+    - --extra-index-url https://data.pyg.org/whl/torch-2.7.0+cu128.html
     - cumm-cu128
     - opencv-python-headless
     - pandas
     - scikit-learn
     - smplx
     - spconv-cu126
-    - torch
+    - torch=2.7.1
     - torchaudio
     - torchvision
     - torch-cluster

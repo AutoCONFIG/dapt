@@ -24,8 +24,6 @@ dependencies:
   - pip
   - plyfile
   - python=3.12
-  - pytorch=2.7.0=*cuda128*
-  - pytorch-cuda=12.8
   - pyyaml
   - regex
   - scipy
@@ -46,6 +44,7 @@ dependencies:
     - scikit-learn
     - smplx
     - spconv-cu126
+    - torch
     - torch-cluster
     - torch-geometric
     - torch-scatter

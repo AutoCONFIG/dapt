@@ -1,7 +1,7 @@
 name: dapt
 channels:
   - pytorch
-  - nvidia/label/cuda-12.8.1
+  - nvidia/label/cuda-12.4.1
   - nvidia
   - bioconda
   - conda-forge
@@ -10,7 +10,8 @@ dependencies:
   - addict
   - conda-forge::cudnn
   - cuda
-  - cuda-nvcc=12.9
+  - cuda-nvcc
+  - cuda-toolkit
   - einops
   - ffmpeg
   - gcc=13.2
@@ -24,6 +25,8 @@ dependencies:
   - pip
   - plyfile
   - python=3.10
+  - pytorch
+  - pytorch-cuda=12.4
   - pyyaml
   - regex
   - scipy
@@ -31,21 +34,19 @@ dependencies:
   - tensorboardx
   - termcolor
   - timm
+  - torchaudio
+  - torchvision
   - tqdm
   - wandb
   - yapf
   - pip:
-    - --find-links https://download.pytorch.org/whl/cu128
-    - --extra-index-url https://data.pyg.org/whl/torch-2.7.0+cu128.html
+    - --find-links https://data.pyg.org/whl/torch-2.6.0+cu124.html
     - cumm-cu128
     - opencv-python-headless
     - pandas
     - scikit-learn
     - smplx
-    - spconv-cu126
-    - torch==2.7.1
-    - torchaudio
-    - torchvision
+    - spconv-cu124
     - torch-cluster
     - torch-geometric
     - torch-scatter

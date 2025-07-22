@@ -23,7 +23,7 @@ dependencies:
   - open3d
   - pip
   - plyfile
-  - python=3.12
+  - python=3.10
   - pyyaml
   - regex
   - scipy
